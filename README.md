@@ -10,30 +10,30 @@
 # Before use make sure to Install:
   Adafruit PCA9685 python module 
   https://github.com/adafruit/Adafruit_Python_PCA9685
-  'sudo pip install adafruit-pca9685'
+    sudo pip install adafruit-pca9685
   or
-  'sudo apt-get install git build-essential python-dev'
-  'cd ~'
-  'git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git'
-  'cd Adafruit_Python_PCA9685'
-  'sudo python setup.py install'
+    sudo apt-get install git build-essential python-dev
+    cd ~
+    git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
+    cd Adafruit_Python_PCA9685
+    sudo python setup.py install
 # Use example:
-  import pibot
-  import time
+    import pibot
+    import time
   
-  bot = pibot.drive() #defaults to 1000ms pwm frequency 
-  #bot = pibot.drive(500) #would set pwmfrequency to 500ms
+    bot = pibot.drive() #defaults to 1000ms pwm frequency 
+    #bot = pibot.drive(500) #would set pwmfrequency to 500ms
   
-  bot.rinv = -1 #inverts the right side motor
-  #bot.linv = -1 #would invert the left side
+    bot.rinv = -1 #inverts the right side motor
+    #bot.linv = -1 #would invert the left side
   
-  bot.setMotors(100,100) #full speed forward!
-  time.sleep(1)
-  bot.brake() #brakes the motors, does NOT coast
-  time.sleep(1)
-  bot.setMotors(-100,-100) #full speed backward!
-  time.sleep(1)
-  bot.setMotors(50,-50) #spins clockwise at half speed
-  time.sleep(1)
-  bot.setMotors(0,0) #coasts to a stop...
+    bot.setMotors(100,100) #full speed forward!
+    time.sleep(1)
+    bot.brake() #brakes the motors, does NOT coast
+    time.sleep(1)
+    bot.setMotors(-100,-100) #full speed backward!
+    time.sleep(1)
+    bot.setMotors(50,-50) #spins clockwise at half speed
+    time.sleep(1)
+    bot.setMotors(0,0) #coasts to a stop...
   
