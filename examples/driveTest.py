@@ -1,16 +1,16 @@
-from robot import robot
+from pibot import drive
 import time
 
-pibot = robot()
-pibot.rinv = -1
+bot = drive()
+bot.rinv = -1
 while True:
-	pibot.setMotors(100,100)
-	'''time.sleep(1)
-	pibot.setMotors(-100,100)
+	bot.setMotors(100,100)
+	time.sleep(1)
+	bot.setMotors(-100,100)
 	time.sleep(2)
-	pibot.setMotors(100,-100)
+	bot.setMotors(100,-100)
 	time.sleep(2)
-	pibot.setMotors(100,100)'''
+	bot.setMotors(100,100)
 	time.sleep(5)
-	pibot.brake()
+	bot.brake()
 	time.sleep(2)
