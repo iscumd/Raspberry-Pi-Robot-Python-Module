@@ -10,13 +10,14 @@
 # Before use make sure to Install:
   Adafruit PCA9685 python module<br> 
   https://github.com/adafruit/Adafruit_Python_PCA9685<br>
-    ```
     
+    ```
     sudo pip install adafruit-pca9685
     ```
-  or
-    ```
     
+  or
+  
+    ```
     sudo apt-get install git build-essential python-dev
     cd ~
     git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
@@ -24,7 +25,8 @@
     sudo python setup.py install
     ```
 # Use example:
-    ```python
+
+    ```Python
     import pibot
     import time
   
