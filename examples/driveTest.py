@@ -1,3 +1,4 @@
+#This file needs to be in the same directory as the pibot.py file for it to import properly
 from pibot import drive
 import time
 
